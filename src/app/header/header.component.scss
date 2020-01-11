@@ -1,0 +1,21 @@
+@import "../styles/variables";
+.logo {
+  background-image: url('/assets/img/logo.svg');
+  background-size: contain;
+  width: 240px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.left-side {
+  border-right: 2px solid $white;
+  background-color: $primary-deep;
+}
+
+.support {
+  background-image: url('/assets/img/man.jpg');
+  background-size: cover;
+  height: 132px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
