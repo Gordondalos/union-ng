@@ -97,3 +97,13 @@ h1,h2,h3,h4,h5,h6 {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.cards {
+  justify-content: flex-start;
+  text-align: left;
+  flex-wrap: wrap;
+  mat-card {
+    min-width: 198px;
+    margin: 16px 4px 0;
+  }
+}

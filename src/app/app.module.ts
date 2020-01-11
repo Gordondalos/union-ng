@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SoftComponent } from './soft/soft.component';
 import { PartnerComponent } from './partner/partner.component';
+import { PriceComponent } from './price/price.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PartnerComponent } from './partner/partner.component';
     AboutComponent,
     ContactComponent,
     SoftComponent,
-    PartnerComponent
+    PartnerComponent,
+    PriceComponent
   ],
   imports: [
     BrowserModule,
