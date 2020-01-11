@@ -13,6 +13,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatCardModule} from "@angular/material/card";
 import { FooterComponent } from './footer/footer.component';
+import { ServiceComponent } from './service/service.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { SoftComponent } from './soft/soft.component';
+import { PartnerComponent } from './partner/partner.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { FooterComponent } from './footer/footer.component';
     SloganComponent,
     SideBarComponent,
     MainContentComponent,
-    FooterComponent
+    FooterComponent,
+    ServiceComponent,
+    AboutComponent,
+    ContactComponent,
+    SoftComponent,
+    PartnerComponent
   ],
   imports: [
     BrowserModule,
