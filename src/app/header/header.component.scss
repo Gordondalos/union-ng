@@ -1,4 +1,7 @@
 @import "../styles/variables";
+.fa-bars {
+  display: none;
+}
 .logo {
   background-image: url('/assets/img/logo.svg');
   background-size: contain;
@@ -43,6 +46,15 @@
     min-width: auto !important;
     width: 100% !important;
     font-size: 12px;
+  }
+
+
+}
+
+@media all and (max-width: 878px){
+
+  .fa-bars {
+    display: block;
   }
 
 
