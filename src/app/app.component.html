@@ -1,15 +1,38 @@
-<union-header></union-header>
-<div class="container mt16">
-  <div class="d-flex">
-    <div class="w-30p">
-      <union-side-bar></union-side-bar>
+<mat-sidenav-container
+  (backdropClick)="close()">
+  <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>
+
+    <div class="side-bar-block">
+      <div class="posr">
+        <i class="fa fa-close" (click)="close()"></i>
+      </div>
+
+      <div class="w100 py8">
+        <a (click)="close()" routerLink="/" class="p16 d-block  text-decoration-none"><i class="fa fa-forward f12"></i> Главная</a>
+        <a (click)="close()" routerLink="/about" class="p16 d-block  text-decoration-none"><i class="fa fa-forward f12"></i> Окомпании</a>
+        <a (click)="close()" routerLink="/service" class="p16 d-block  text-decoration-none"><i class="fa fa-forward f12"></i> Услуги</a>
+        <a (click)="close()" routerLink="/price" class="p16 d-block  text-decoration-none"><i class="fa fa-forward f12"></i> Прайс лист</a>
+      </div>
+
     </div>
-    <div class="w-70p content p16">
-      <router-outlet></router-outlet>
+
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <union-header></union-header>
+    <div class="container mt16">
+      <div class="d-flex">
+        <div class="w-30p">
+          <union-side-bar></union-side-bar>
+        </div>
+        <div class="w-70p content p16">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<union-footer></union-footer>
+    <union-footer></union-footer>
 
 
+  </mat-sidenav-content>
+</mat-sidenav-container>

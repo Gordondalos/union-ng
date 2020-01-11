@@ -5,3 +5,13 @@
     height: 100%;
   }
 }
+
+@media all and (max-width: 878px){
+  .w-30p {
+    display: none;
+  }
+  .w-70p {
+    width: 100% !important;
+  }
+
+}

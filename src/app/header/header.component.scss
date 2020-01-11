@@ -8,7 +8,6 @@
 }
 
 .left-side {
-  border-right: 2px solid $white;
   background-color: $primary-deep;
 }
 
@@ -18,4 +17,33 @@
   height: 132px;
   background-repeat: no-repeat;
   width: 100%;
+}
+
+.flex-wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+  .left-side {
+    min-width: 440px;
+  }
+  .right-side {
+    min-width: 440px;
+  }
+}
+
+.side-bar {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+
+}
+
+@media all and (max-width: 470px){
+
+  .left-side, .right-side {
+    min-width: auto !important;
+    width: 100% !important;
+    font-size: 12px;
+  }
+
+
 }

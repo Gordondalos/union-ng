@@ -105,5 +105,33 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   mat-card {
     min-width: 198px;
     margin: 16px 4px 0;
+    width: 100%;
   }
+}
+
+.mat-drawer-container {
+  background-color: transparent !important;
+  height: 100%;
+}
+
+
+@media all and (max-width: 878px){
+  .cards {
+    justify-content: center;
+    mat-card {
+      width: 100% !important;
+      max-width: 440px;
+    }
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .content {
+    max-width: 440px;
+    margin: auto;
+  }
+
+
 }

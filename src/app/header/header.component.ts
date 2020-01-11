@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {AppService} from "../app.service";
 
 @Component({
   selector: 'union-header',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService: AppService) {
+  }
 
   ngOnInit() {
+  }
+
+  openSideBar(): void {
+    this.appService.toggleSidebar.next(true);
   }
 
 }

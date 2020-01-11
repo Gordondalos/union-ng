@@ -4,3 +4,11 @@
 .menu {
   min-height: 40px;
 }
+
+@media all and (max-width: 878px){
+
+  :host{
+    display: none;
+  }
+
+}

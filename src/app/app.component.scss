@@ -6,3 +6,41 @@
   display: block;
   overflow: auto;
 }
+
+.side-bar-block {
+  min-width: 85vw;
+  a {
+    color: $primary-deep;
+    outline: none !important;
+    border-bottom: 1px solid $light-gray;
+  }
+}
+.fa-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
+}
+
+@media all and (max-width: 878px){
+
+  .w-30p{
+    display: none;
+  }
+  .w-70p.content{
+    width: 100% !important;
+  }
+
+
+}
+
+@media all and (max-width: 878px){
+
+  .content {
+    height: auto !important;
+  }
+
+
+}
+
+
